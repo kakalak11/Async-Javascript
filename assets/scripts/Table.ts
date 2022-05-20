@@ -36,6 +36,8 @@ export class Table extends Component {
     }
 
     /*
+    DONE
+
     Quest 1: Implement function spin table 5 reel cùng lúc, sử dụng promise, trả về call back khi tất cả reel cùng dừng lại
     có thể update lại function spin, không được update Reel.ts
     
