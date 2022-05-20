@@ -53,6 +53,8 @@ export class Table extends Component {
     */
 
     /*
+    DONE
+
     Quest 2: Từ quest 1, kiểm tra nếu có một trong những reel chạy quá 10s chưa dừng trigger function onTableTimeout
 
     onTableTimout() {
