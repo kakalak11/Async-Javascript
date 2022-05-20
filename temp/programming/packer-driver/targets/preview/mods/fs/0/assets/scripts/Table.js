@@ -61,23 +61,31 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this._reels.forEach(reel => {
             var resolve = () => true;
 
-            var promise = new Promise(resolve => {
+            var reject = () => false;
+
+            var promise = new Promise((resolve, reject) => {
               reel.startSpin(resolve);
+              setTimeout(reject, 10000);
             });
 
             this._promiseList.push(promise);
           });
 
           var callbackComplete = this.onTableStop.bind(this);
-          Promise.all(this._promiseList).then(callbackComplete);
+          var callbackTimeOut = this.onTableTimeout.bind(this);
+          Promise.all(this._promiseList).then(callbackComplete).catch(callbackTimeOut);
         }
 
         onTableStop() {
           this.status.string = 'Table Stopped';
-          console.log('Table Stop');
+        }
+
+        onTableTimeout() {
+          this.status.string = 'Table Timeout';
         }
         /*
-        Quest 1: Implement function spin table 5 reel cùng lúc, sử dụng promise, trả về call back khi tất cả reel cùng dừng lại
+        DONE
+         Quest 1: Implement function spin table 5 reel cùng lúc, sử dụng promise, trả về call back khi tất cả reel cùng dừng lại
         có thể update lại function spin, không được update Reel.ts
         
         onTableStop() {

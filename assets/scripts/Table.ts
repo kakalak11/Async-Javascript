@@ -3,14 +3,14 @@ import { _decorator, Component, Node, log, Label } from 'cc';
 import { Reel } from './Reel';
 const { ccclass, property } = _decorator;
 
- 
+
 @ccclass('Table')
 export class Table extends Component {
 
     _reels = [];
     _promiseList = [];
 
-    @property({type: Label})
+    @property({ type: Label })
     status = null;
 
     onLoad() {
@@ -21,18 +21,24 @@ export class Table extends Component {
         this.status.string = 'Table Spinning';
         this._reels.forEach(reel => {
             const resolve = () => true;
-            const promise = new Promise(resolve => {
+            const reject = () => false;
+            const promise = new Promise((resolve, reject) => {
                 reel.startSpin(resolve);
+                setTimeout(reject, 10000);
             })
             this._promiseList.push(promise);
         });
         const callbackComplete = this.onTableStop.bind(this);
-        Promise.all(this._promiseList).then(callbackComplete);
+        const callbackTimeOut = this.onTableTimeout.bind(this);
+        Promise.all(this._promiseList).then(callbackComplete).catch(callbackTimeOut);
     }
 
     onTableStop() {
         this.status.string = 'Table Stopped';
-        console.log('Table Stop');
+    }
+
+    onTableTimeout() {
+        this.status.string = 'Table Timeout';
     }
 
     /*

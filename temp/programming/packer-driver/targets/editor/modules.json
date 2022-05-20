@@ -389,7 +389,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 3138474.683801979,
+    "mTimestamp": 3663582.48052299,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -586,7 +586,7 @@
   },
   "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table.ts": {
     "mTimestamp": {
-      "mtime": 1653064755394.0466,
+      "mtime": 1653065280788.2444,
       "uuid": "bbf30072-1382-4354-b218-7fe66959cf0e"
     },
     "chunkId": "assets/scripts/Table.js",
