@@ -4,11 +4,6 @@
     "cce:/internal/x/prerequisite-imports": "./mods/cce/internal/x/prerequisite-imports.js"
   },
   "scopes": {
-    "./mods/fs/0/assets/scripts/Table.js": {
-      "cc": "./mods/cce/internal/x/cc.js",
-      "__unresolved_1": "./mods/fs/0/assets/scripts/Reel.js",
-      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
-    },
     "./mods/fs/0/assets/scripts/Reel.js": {
       "cc": "./mods/cce/internal/x/cc.js"
     },
@@ -41,6 +36,11 @@
     "./mods/cce/internal/x/prerequisite-imports.js": {
       "__unresolved_0": "./mods/fs/0/assets/scripts/Reel.js",
       "__unresolved_1": "./mods/fs/0/assets/scripts/Table.js"
+    },
+    "./mods/fs/0/assets/scripts/Table.js": {
+      "cc": "./mods/cce/internal/x/cc.js",
+      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
+      "__unresolved_1": "./mods/fs/0/assets/scripts/Reel.js"
     }
   }
 }
