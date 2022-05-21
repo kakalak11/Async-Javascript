@@ -1,7 +1,7 @@
 
 import { _decorator, Component, Node, Vec3, Vec2 } from 'cc';
 const { ccclass, property } = _decorator;
- 
+
 @ccclass('Reel')
 export class Reel extends Component {
 
@@ -17,7 +17,7 @@ export class Reel extends Component {
     reelSpeed = 100;
 
     startSpin() {
-        return new Promise((resolve,reject) => {
+        return new Promise((resolve, reject) => {
             this._rollTarget = Math.round(Math.random() * 20 + 50);
             this._spinning = true;
             this._rollCount = 0;
@@ -25,6 +25,7 @@ export class Reel extends Component {
             this.reelSpeed = Math.random() * 500 + 700;
             this._direction = (Math.random() > 0.5) ? 1 : -1;
             this._reelStopCB = resolve;
+            setTimeout(reject, 10000);
         });
     }
 
@@ -47,7 +48,7 @@ export class Reel extends Component {
     }
 
     swapSymbol() {
-        let lastSymbolIndex = (this._direction == 1) ? this.node.children.length-1 : 0;
+        let lastSymbolIndex = (this._direction == 1) ? this.node.children.length - 1 : 0;
         let lastSymbol = this.node.children[lastSymbolIndex];
 
         if (this._direction == 1) {

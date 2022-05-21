@@ -24,11 +24,21 @@ export class Table extends Component {
             const promise = this._reels[index].startSpin();
             this._promiseList.push(promise);
         }
-        Promise.all(this._promiseList).then(() => this.onTableStop());
+        Promise.all(this._promiseList)
+        .then(() => {
+            this.onTableStop()
+        })
+        .catch(() => {
+            this.onTableTimeout();
+        });
     }
 
     onTableStop() {
         this.status.string = 'Table Stopped';
+    }
+
+    onTableTimeout() {
+        this.status.string = 'Table Timeout';
     }
 
     /*

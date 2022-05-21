@@ -58,6 +58,7 @@ System.register(["cc"], function (_export, _context) {
             this.reelSpeed = Math.random() * 500 + 700;
             this._direction = Math.random() > 0.5 ? 1 : -1;
             this._reelStopCB = resolve;
+            setTimeout(reject, 10000);
           });
         }
 
