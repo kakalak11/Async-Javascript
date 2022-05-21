@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 17316.906322985888,
+    "mTimestamp": 19708.515326976776,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -389,11 +389,11 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 3138474.683801979,
+    "mTimestamp": 26389.935206979513,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
-        "value": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts",
+        "value": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/assets/scripts/Reel.ts",
         "rewritten": "__unresolved_0",
         "loc": {
           "start": {
@@ -402,21 +402,21 @@
           },
           "end": {
             "line": 5,
-            "column": 151
+            "column": 134
           }
         }
       },
       {
-        "value": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table.ts",
+        "value": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/assets/scripts/Table.ts",
         "rewritten": "__unresolved_1",
         "loc": {
           "start": {
             "line": 5,
-            "column": 167
+            "column": 150
           },
           "end": {
             "line": 5,
-            "column": 284
+            "column": 250
           }
         }
       }
@@ -427,11 +427,11 @@
     "resolvedImports": [
       {
         "isExternal": false,
-        "url": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts"
+        "url": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/assets/scripts/Reel.ts"
       },
       {
         "isExternal": false,
-        "url": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table.ts"
+        "url": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/assets/scripts/Table.ts"
       }
     ]
   },
@@ -538,114 +538,12 @@
     ]
   },
   "cce:/internal/code-quality/cr.mjs": {
-    "mTimestamp": 1653061618320,
+    "mTimestamp": 1653019461352,
     "chunkId": "quick-pack:/cce/internal/code-quality/cr.js",
     "imports": [],
     "modLoMetadata": {
       "type": "esm"
     },
     "resolvedImports": []
-  },
-  "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts": {
-    "mTimestamp": {
-      "mtime": 1652984966000,
-      "uuid": "3590cdd1-16ef-415f-9d40-1bbaf64603bf"
-    },
-    "chunkId": "assets/scripts/Reel.js",
-    "imports": [
-      {
-        "value": "cc"
-      },
-      {
-        "value": "cc",
-        "loc": {
-          "start": {
-            "line": 2,
-            "column": 56
-          },
-          "end": {
-            "line": 2,
-            "column": 60
-          }
-        }
-      }
-    ],
-    "modLoMetadata": {
-      "type": "esm"
-    },
-    "resolvedImports": [
-      {
-        "isExternal": false,
-        "url": "cce:/internal/x/cc"
-      },
-      {
-        "isExternal": false,
-        "url": "cce:/internal/x/cc"
-      }
-    ]
-  },
-  "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table.ts": {
-    "mTimestamp": {
-      "mtime": 1653064755394.0466,
-      "uuid": "bbf30072-1382-4354-b218-7fe66959cf0e"
-    },
-    "chunkId": "assets/scripts/Table.js",
-    "imports": [
-      {
-        "value": "cce:/internal/code-quality/cr.mjs",
-        "rewritten": "__unresolved_0"
-      },
-      {
-        "value": "cc"
-      },
-      {
-        "value": "cc",
-        "loc": {
-          "start": {
-            "line": 2,
-            "column": 56
-          },
-          "end": {
-            "line": 2,
-            "column": 60
-          }
-        }
-      },
-      {
-        "value": "./Reel",
-        "rewritten": "__unresolved_1",
-        "loc": {
-          "start": {
-            "line": 3,
-            "column": 21
-          },
-          "end": {
-            "line": 3,
-            "column": 29
-          }
-        }
-      }
-    ],
-    "modLoMetadata": {
-      "type": "esm"
-    },
-    "resolvedImports": [
-      {
-        "isExternal": false,
-        "url": "cce:/internal/code-quality/cr.mjs"
-      },
-      {
-        "isExternal": false,
-        "url": "cce:/internal/x/cc"
-      },
-      {
-        "isExternal": false,
-        "url": "cce:/internal/x/cc"
-      },
-      {
-        "isExternal": false,
-        "url": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts"
-      }
-    ]
   }
 }

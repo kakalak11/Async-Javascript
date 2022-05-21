@@ -8,7 +8,6 @@ const { ccclass, property } = _decorator;
 export class Table extends Component {
 
     _reels = [];
-    _promiseList = [];
 
     @property({type: Label})
     status = null;
@@ -19,20 +18,7 @@ export class Table extends Component {
 
     spin() {
         this.status.string = 'Table Spinning';
-        this._reels.forEach(reel => {
-            const resolve = () => true;
-            const promise = new Promise(resolve => {
-                reel.startSpin(resolve);
-            })
-            this._promiseList.push(promise);
-        });
-        const callbackComplete = this.onTableStop.bind(this);
-        Promise.all(this._promiseList).then(callbackComplete);
-    }
-
-    onTableStop() {
-        this.status.string = 'Table Stopped';
-        console.log('Table Stop');
+        this._reels.forEach(it => it.startSpin());
     }
 
     /*
