@@ -40,12 +40,12 @@
       "__unresolved_22": "cce:/internal/x/cc-fu/video",
       "__unresolved_23": "cce:/internal/x/cc-fu/webview"
     },
+    "./mods/cce/internal/x/prerequisite-imports.js": {
+      "__unresolved_1": "./mods/fs/0/assets/scripts/Table.js",
+      "__unresolved_0": "./mods/fs/0/assets/scripts/Reel.js"
+    },
     "./mods/fs/0/assets/scripts/Reel.js": {
       "cc": "./mods/cce/internal/x/cc.js"
-    },
-    "./mods/cce/internal/x/prerequisite-imports.js": {
-      "__unresolved_0": "./mods/fs/0/assets/scripts/Reel.js",
-      "__unresolved_1": "./mods/fs/0/assets/scripts/Table.js"
     },
     "./mods/fs/0/assets/scripts/Table.js": {
       "cc": "./mods/cce/internal/x/cc.js",

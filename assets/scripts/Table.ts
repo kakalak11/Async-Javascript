@@ -19,23 +19,20 @@ export class Table extends Component {
 
     spin() {
         this.status.string = 'Table Spinning';
-        this._reels.forEach(reel => {
-            const resolve = () => true;
-            const promise = new Promise(resolve => {
-                reel.startSpin(resolve);
-            })
+
+        for (let index = 0; index < this._reels.length; index++) {
+            const promise = this._reels[index].startSpin();
             this._promiseList.push(promise);
-        });
-        const callbackComplete = this.onTableStop.bind(this);
-        Promise.all(this._promiseList).then(callbackComplete);
+        }
+        Promise.all(this._promiseList).then(() => this.onTableStop());
     }
 
     onTableStop() {
         this.status.string = 'Table Stopped';
-        console.log('Table Stop');
     }
 
     /*
+    DONE
     Quest 1: Implement function spin table 5 reel cùng lúc, sử dụng promise, trả về call back khi tất cả reel cùng dừng lại
     có thể update lại function spin, không được update Reel.ts
     
@@ -45,6 +42,7 @@ export class Table extends Component {
     */
 
     /*
+    DONE
     Quest 2: Từ quest 1, kiểm tra nếu có một trong những reel chạy quá 10s chưa dừng trigger function onTableTimeout
 
     onTableTimout() {
@@ -53,6 +51,7 @@ export class Table extends Component {
     */
 
     /*
+    DONE
     Quest 3: Implement function để table spin từng reel theo thứ tự 1->5 lần lượt reel này dừng đến reel tiếp theo,
     sau khi tất cả các reel đã dừng thì trigger function onTableStop
 

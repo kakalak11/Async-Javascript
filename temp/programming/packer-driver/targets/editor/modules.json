@@ -389,7 +389,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 74822618.84032702,
+    "mTimestamp": 75331194.92911702,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -548,7 +548,7 @@
   },
   "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts": {
     "mTimestamp": {
-      "mtime": 1653119589765.6765,
+      "mtime": 1653140772412.4897,
       "uuid": "3590cdd1-16ef-415f-9d40-1bbaf64603bf"
     },
     "chunkId": "assets/scripts/Reel.js",
@@ -586,7 +586,7 @@
   },
   "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table.ts": {
     "mTimestamp": {
-      "mtime": 1653140490631.071,
+      "mtime": 1653141000447.2517,
       "uuid": "bbf30072-1382-4354-b218-7fe66959cf0e"
     },
     "chunkId": "assets/scripts/Table.js",

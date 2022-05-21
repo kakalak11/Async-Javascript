@@ -114,20 +114,13 @@
     "physicalLocation": "cce/internal/code-quality/cr.js",
     "mTimestamp": 1653065694639
   },
-  "assets/scripts/Reel.js": {
-    "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/Reel.js",
-    "mTimestamp": 1653119593286
-  },
   "quick-pack:/cce/internal/x/prerequisite-imports.js": {
     "imports": {
-      "__unresolved_0": "assets/scripts/Reel.js",
-      "__unresolved_1": "assets/scripts/Table.js"
+      "__unresolved_1": "assets/scripts/Table.js",
+      "__unresolved_0": "assets/scripts/Reel.js"
     },
     "physicalLocation": "cce/internal/x/prerequisite-imports.js",
-    "mTimestamp": 1653140494232,
+    "mTimestamp": 1653141002839,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/prerequisite-imports"
   },
@@ -138,6 +131,13 @@
       "__unresolved_1": "assets/scripts/Reel.js"
     },
     "physicalLocation": "fs/0/assets/scripts/Table.js",
-    "mTimestamp": 1653140494263
+    "mTimestamp": 1653141002866
+  },
+  "assets/scripts/Reel.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/Reel.js",
+    "mTimestamp": 1653141002891
   }
 }
