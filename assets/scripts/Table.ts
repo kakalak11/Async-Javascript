@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, log, Label } from 'cc';
+import { _decorator, Component, Node, log, Label, tween, Tween } from 'cc';
 import { Reel } from './Reel';
 const { ccclass, property } = _decorator;
 
@@ -9,9 +9,12 @@ export class Table extends Component {
 
     _reels = [];
     _promiseList = [];
+    _tweenList: Tween<Table>[] = [];
 
     @property({ type: Label })
     status = null;
+
+    private _stopIndex: number = 0;
 
     onLoad() {
         this._reels = this.getComponentsInChildren(Reel);
@@ -19,18 +22,34 @@ export class Table extends Component {
 
     spin() {
         this.status.string = 'Table Spinning';
-        this._reels.forEach(reel => {
-            const resolve = () => true;
-            const reject = () => false;
-            const promise = new Promise((resolve, reject) => {
-                reel.startSpin(resolve);
-                setTimeout(reject, 10000);
+        this._stopIndex = 0;
+        this._promiseList = [];
+
+        for (let index = 0; index < this._reels.length; index++) {
+            const reel = this._reels[index];
+
+            const spinPromise = new Promise((resolve) => {
+                const callbackStop = this.onCallbackStop.bind(this, index, resolve);
+                setTimeout(() => reel.startSpin(callbackStop), 250 * index);
             })
-            this._promiseList.push(promise);
-        });
-        const callbackComplete = this.onTableStop.bind(this);
-        const callbackTimeOut = this.onTableTimeout.bind(this);
-        Promise.all(this._promiseList).then(callbackComplete).catch(callbackTimeOut);
+
+            this._promiseList.push(spinPromise);
+        }
+
+        Promise.all(this._promiseList).then(() => this.onTableStop());
+    }
+
+    onCallbackStop(index, resolve) {
+        if (index !== this._stopIndex) {
+            this._reels[index]['_spinning'] = true;
+            this._reels[index]['_rollCount'] = 0;
+            this._reels[index]['_rollTarget'] = Math.random() * 10 + index;
+            return;
+        }
+
+        this._stopIndex++;
+        resolve();
+        return true;
     }
 
     onTableStop() {
@@ -62,7 +81,7 @@ export class Table extends Component {
     }
     */
 
-    /*
+    /* 
     Quest 3: Implement function để table spin từng reel theo thứ tự 1->5 lần lượt reel này dừng đến reel tiếp theo,
     sau khi tất cả các reel đã dừng thì trigger function onTableStop
 

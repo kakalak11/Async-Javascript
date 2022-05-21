@@ -1,10 +1,21 @@
 {
-  "assets/scripts/Reel.js": {
+  "assets/scripts/Table-001.js": {
     "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js"
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/Reel.js"
     },
-    "physicalLocation": "fs/0/assets/scripts/Reel.js",
-    "mTimestamp": 1653061641608
+    "physicalLocation": "fs/0/assets/scripts/Table-001.js",
+    "mTimestamp": 1653065560956
+  },
+  "assets/scripts/Table-Quest3.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/Reel.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/Table-Quest3.js",
+    "mTimestamp": 1653065570079
   },
   "quick-pack:/cce/internal/x/cc.js": {
     "imports": {
@@ -106,14 +117,21 @@
       }
     },
     "physicalLocation": "cce/internal/x/cc.js",
-    "mTimestamp": 1653061641552,
+    "mTimestamp": 1653065694677,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/cc"
   },
   "quick-pack:/cce/internal/code-quality/cr.js": {
     "imports": {},
     "physicalLocation": "cce/internal/code-quality/cr.js",
-    "mTimestamp": 1653061641654
+    "mTimestamp": 1653065694701
+  },
+  "assets/scripts/Reel.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/Reel.js",
+    "mTimestamp": 1653119593335
   },
   "quick-pack:/cce/internal/x/prerequisite-imports.js": {
     "imports": {
@@ -121,7 +139,7 @@
       "__unresolved_1": "assets/scripts/Table.js"
     },
     "physicalLocation": "cce/internal/x/prerequisite-imports.js",
-    "mTimestamp": 1653065281841,
+    "mTimestamp": 1653140388503,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/prerequisite-imports"
   },
@@ -132,6 +150,6 @@
       "__unresolved_1": "assets/scripts/Reel.js"
     },
     "physicalLocation": "fs/0/assets/scripts/Table.js",
-    "mTimestamp": 1653065281873
+    "mTimestamp": 1653140388541
   }
 }

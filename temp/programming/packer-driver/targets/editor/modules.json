@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 17316.906322985888,
+    "mTimestamp": 17214.182517021894,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -389,7 +389,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 3663582.48052299,
+    "mTimestamp": 74716869.25086004,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -538,7 +538,7 @@
     ]
   },
   "cce:/internal/code-quality/cr.mjs": {
-    "mTimestamp": 1653061618320,
+    "mTimestamp": 1653065672144,
     "chunkId": "quick-pack:/cce/internal/code-quality/cr.js",
     "imports": [],
     "modLoMetadata": {
@@ -548,7 +548,7 @@
   },
   "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts": {
     "mTimestamp": {
-      "mtime": 1652984966000,
+      "mtime": 1653119589765.6765,
       "uuid": "3590cdd1-16ef-415f-9d40-1bbaf64603bf"
     },
     "chunkId": "assets/scripts/Reel.js",
@@ -586,10 +586,138 @@
   },
   "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table.ts": {
     "mTimestamp": {
-      "mtime": 1653065280788.2444,
+      "mtime": 1653140386433.3374,
       "uuid": "bbf30072-1382-4354-b218-7fe66959cf0e"
     },
     "chunkId": "assets/scripts/Table.js",
+    "imports": [
+      {
+        "value": "cce:/internal/code-quality/cr.mjs",
+        "rewritten": "__unresolved_0"
+      },
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 70
+          },
+          "end": {
+            "line": 2,
+            "column": 74
+          }
+        }
+      },
+      {
+        "value": "./Reel",
+        "rewritten": "__unresolved_1",
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 21
+          },
+          "end": {
+            "line": 3,
+            "column": 29
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/code-quality/cr.mjs"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts"
+      }
+    ]
+  },
+  "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table-001.ts": {
+    "mTimestamp": {
+      "mtime": 1653065560865.6194,
+      "uuid": "0d5c2e02-9f6b-4031-8e0c-a973b99465b3"
+    },
+    "chunkId": "assets/scripts/Table-001.js",
+    "imports": [
+      {
+        "value": "cce:/internal/code-quality/cr.mjs",
+        "rewritten": "__unresolved_0"
+      },
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 56
+          },
+          "end": {
+            "line": 2,
+            "column": 60
+          }
+        }
+      },
+      {
+        "value": "./Reel",
+        "rewritten": "__unresolved_1",
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 21
+          },
+          "end": {
+            "line": 3,
+            "column": 29
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/code-quality/cr.mjs"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Reel.ts"
+      }
+    ]
+  },
+  "file:///Users/fe-anhtu-fresher/Downloads/Telegram%20Desktop/PromiseExample/Async-Javascript/assets/scripts/Table-Quest3.ts": {
+    "mTimestamp": {
+      "mtime": 1653065560865.6194,
+      "uuid": "0d5c2e02-9f6b-4031-8e0c-a973b99465b3"
+    },
+    "chunkId": "assets/scripts/Table-Quest3.js",
     "imports": [
       {
         "value": "cce:/internal/code-quality/cr.mjs",

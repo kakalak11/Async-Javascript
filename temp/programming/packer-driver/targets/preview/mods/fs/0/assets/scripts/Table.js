@@ -46,7 +46,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           _defineProperty(this, "_promiseList", []);
 
+          _defineProperty(this, "_tweenList", []);
+
           _initializerDefineProperty(this, "status", _descriptor, this);
+
+          _defineProperty(this, "_stopIndex", 0);
         }
 
         onLoad() {
@@ -56,24 +60,41 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }
 
         spin() {
+          var _this = this;
+
           this.status.string = 'Table Spinning';
+          this._stopIndex = 0;
+          this._promiseList = [];
 
-          this._reels.forEach(reel => {
-            var resolve = () => true;
+          var _loop = function _loop(index) {
+            var reel = _this._reels[index];
+            var spinPromise = new Promise(resolve => {
+              var callbackStop = _this.onCallbackStop.bind(_this, index, resolve);
 
-            var reject = () => false;
-
-            var promise = new Promise((resolve, reject) => {
-              reel.startSpin(resolve);
-              setTimeout(reject, 10000);
+              setTimeout(() => reel.startSpin(callbackStop), 250 * index);
             });
 
-            this._promiseList.push(promise);
-          });
+            _this._promiseList.push(spinPromise);
+          };
 
-          var callbackComplete = this.onTableStop.bind(this);
-          var callbackTimeOut = this.onTableTimeout.bind(this);
-          Promise.all(this._promiseList).then(callbackComplete).catch(callbackTimeOut);
+          for (var index = 0; index < this._reels.length; index++) {
+            _loop(index);
+          }
+
+          Promise.all(this._promiseList).then(() => this.onTableStop());
+        }
+
+        onCallbackStop(index, resolve) {
+          if (index !== this._stopIndex) {
+            this._reels[index]['_spinning'] = true;
+            this._reels[index]['_rollCount'] = 0;
+            this._reels[index]['_rollTarget'] = Math.random() * 10 + index;
+            return;
+          }
+
+          this._stopIndex++;
+          resolve();
+          return true;
         }
 
         onTableStop() {
@@ -94,13 +115,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         */
 
         /*
-        Quest 2: Từ quest 1, kiểm tra nếu có một trong những reel chạy quá 10s chưa dừng trigger function onTableTimeout
+        DONE
+         Quest 2: Từ quest 1, kiểm tra nếu có một trong những reel chạy quá 10s chưa dừng trigger function onTableTimeout
          onTableTimout() {
             this.status.string = 'Table Timeout';
         }
         */
 
-        /*
+        /* 
         Quest 3: Implement function để table spin từng reel theo thứ tự 1->5 lần lượt reel này dừng đến reel tiếp theo,
         sau khi tất cả các reel đã dừng thì trigger function onTableStop
          onTableStop() {

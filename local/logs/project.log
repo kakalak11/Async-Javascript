@@ -1,81 +1,206 @@
-2022-05-20 22:47:02-log: [Package] menu@1.0.0 enable
-2022-05-20 22:47:02-log: [Package] profile@1.0.0 enable
-2022-05-20 22:47:02-log: [Package] project@1.0.1 enable
-2022-05-20 22:47:02-log: [Package] messages@1.0.0 enable
-2022-05-20 22:47:02-log: [Package] program@1.0.0 enable
-2022-05-20 22:47:02-log: [Package] device@1.0.1 enable
-2022-05-20 22:47:02-log: [Package] ui-kit@1.0.1 enable
-2022-05-20 22:47:02-log: [Package] tester@1.0.0 enable
-2022-05-20 22:47:02-log: [Package] preferences@1.0.0 enable
-2022-05-20 22:47:02-log: Start Quick Compile
-2022-05-20 22:47:06-warn: Browserslist: caniuse-lite is outdated. Please run:
+2022-05-20 23:54:35-log: [Package] menu@1.0.0 enable
+2022-05-20 23:54:35-log: [Package] profile@1.0.0 enable
+2022-05-20 23:54:35-log: [Package] project@1.0.1 enable
+2022-05-20 23:54:35-log: [Package] messages@1.0.0 enable
+2022-05-20 23:54:35-log: [Package] program@1.0.0 enable
+2022-05-20 23:54:35-log: [Package] device@1.0.1 enable
+2022-05-20 23:54:35-log: [Package] ui-kit@1.0.1 enable
+2022-05-20 23:54:35-log: [Package] tester@1.0.0 enable
+2022-05-20 23:54:35-log: [Package] preferences@1.0.0 enable
+2022-05-20 23:54:36-log: Start Quick Compile
+2022-05-20 23:54:40-warn: Browserslist: caniuse-lite is outdated. Please run:
 npx browserslist@latest --update-db
 
 Why you should do it regularly:
 https://github.com/browserslist/browserslist#browsers-data-updating
-2022-05-20 22:47:10-log: QuickCompiler:Bundling target 0: 2.802s
-2022-05-20 22:47:10-log: QuickCompiler:Compile target 0: 8.321s
-2022-05-20 22:47:15-log: QuickCompiler:Bundling target 1: 2.535s
-2022-05-20 22:47:15-log: QuickCompiler:Compile target 1: 4.232s
-2022-05-20 22:47:15-log: Quick Compile: 12594ms
-2022-05-20 22:47:15-log: Setup mods mgr.: 278.562ms
-2022-05-20 22:47:15-log: Profile changed: engine (modules.includeModules: 2d,3d,audio,base,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,marionette,particle,particle-2d,physics-2d-box2d,physics-ammo,primitive,profiler,spine,terrain,tiled-map,tween,ui,video,webview)
-2022-05-20 22:47:15-log: [Package] engine@1.0.5 enable
-2022-05-20 22:47:15-log: [Package] programming@1.0.0 enable
-2022-05-20 22:47:15-log: [Package] engine-extends@1.0.0 enable
-2022-05-20 22:47:15-log: [Package] asset-db@1.0.0 enable
-2022-05-20 22:47:15-log: [Package] console@1.0.0 enable
-2022-05-20 22:47:15-log: [Package] scene@1.0.0 enable
-2022-05-20 22:47:15-log: [Package] about@1.0.0 enable
-2022-05-20 22:47:16-log: [Package] server@1.0.0 enable
-2022-05-20 22:47:16-warn: Server: Port 7456 is occupied
-2022-05-20 22:47:16-log: [Package] inspector@1.0.0 enable
-2022-05-20 22:47:16-log: [Package] hierarchy@1.0.0 enable
-2022-05-20 22:47:17-log: [Package] preview@1.0.1 enable
-2022-05-20 22:47:17-log: [Package] animator@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] builder@1.3.1 enable
-2022-05-20 22:47:18-log: [Package] node-library@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] shortcuts@1.0.1 enable
-2022-05-20 22:47:18-log: [Package] package-asset@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] reference-image@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] animation-graph@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] channel-upload-tools@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] runtime-dev-tools@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] lightmap@1.0.4 enable
-2022-05-20 22:47:18-log: [Package] alipay-mini-game@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] android@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] baidu-mini-game@1.0.0 enable
-2022-05-20 22:47:18-log: [Package] bytedance-mini-game@1.0.1 enable
-2022-05-20 22:47:18-log: [Package] huawei-agc@1.0.0 enable
-2022-05-20 22:47:19-log: [Package] ios@1.0.0 enable
-2022-05-20 22:47:19-log: [Package] ios-app-clip@1.0.0 enable
-2022-05-20 22:47:19-log: [Package] mac@1.0.0 enable
-2022-05-20 22:47:19-log: [Package] native@1.0.0 enable
-2022-05-20 22:47:19-log: [Package] ohos@1.0.0 enable
-2022-05-20 22:47:19-log: [Package] web-desktop@1.0.0 enable
-2022-05-20 22:47:19-log: [Package] web-mobile@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] wechatgame@1.0.1 enable
-2022-05-20 22:47:20-log: [Package] windows@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] xiaomi-quick-game@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] cocos-play@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] huawei-quick-game@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] link-sure@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] oppo-mini-game@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] qtt@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] vivo-mini-game@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] cocos-service@3.0.2 enable
-2022-05-20 22:47:20-log: [Package] importer@1.0.0 enable
-2022-05-20 22:47:20-log: [Package] extension@3.0.15 enable
-2022-05-20 22:47:21-log: [Im-plugin] Check im-plugin version.
-2022-05-20 22:47:21-log: [Package] im-plugin@3.0.8 enable
-2022-05-20 22:47:21-log: [Scene] Cocos Creator v3.4.2
-2022-05-20 22:47:21-info: [Scene] Forward render pipeline initialized.
-2022-05-20 22:47:22-log: [Im-plugin] No online info of im-plugin.
-2022-05-20 23:26:14-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading 'status')
-2022-05-20 23:26:14-error: [Preview]TypeError: Cannot read properties of undefined (reading 'status')
-    at onTableStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:77:16)
-2022-05-20 23:30:11-error: [Preview]Uncaught TypeError: Promise resolver undefined is not a function in http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js
-2022-05-20 23:33:34-error: [Preview]Uncaught TypeError: Cannot read properties of undefined (reading 'then') in http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js
-2022-05-20 23:36:11-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading 'status')
-2022-05-20 23:36:11-error: [Preview]TypeError: Cannot read properties of undefined (reading 'status')
-    at onTableStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:75:16)
+2022-05-20 23:54:44-log: QuickCompiler:Bundling target 0: 2.837s
+2022-05-20 23:54:44-log: QuickCompiler:Compile target 0: 8.275s
+2022-05-20 23:54:48-log: QuickCompiler:Bundling target 1: 2.558s
+2022-05-20 23:54:48-log: QuickCompiler:Compile target 1: 4.311s
+2022-05-20 23:54:48-log: Quick Compile: 12628ms
+2022-05-20 23:54:49-log: Setup mods mgr.: 261.994ms
+2022-05-20 23:54:49-log: Profile changed: engine (modules.includeModules: 2d,3d,audio,base,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,marionette,particle,particle-2d,physics-2d-box2d,physics-ammo,primitive,profiler,spine,terrain,tiled-map,tween,ui,video,webview)
+2022-05-20 23:54:49-log: [Package] engine@1.0.5 enable
+2022-05-20 23:54:49-log: [Package] programming@1.0.0 enable
+2022-05-20 23:54:49-log: [Package] engine-extends@1.0.0 enable
+2022-05-20 23:54:49-log: [Package] asset-db@1.0.0 enable
+2022-05-20 23:54:49-log: [Package] console@1.0.0 enable
+2022-05-20 23:54:49-log: [Package] scene@1.0.0 enable
+2022-05-20 23:54:49-log: [Package] about@1.0.0 enable
+2022-05-20 23:54:49-log: [Package] server@1.0.0 enable
+2022-05-20 23:54:49-warn: Server: Port 7456 is occupied
+2022-05-20 23:54:49-log: [Package] inspector@1.0.0 enable
+2022-05-20 23:54:50-log: [Package] hierarchy@1.0.0 enable
+2022-05-20 23:54:51-log: [Package] preview@1.0.1 enable
+2022-05-20 23:54:51-log: [Package] animator@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] builder@1.3.1 enable
+2022-05-20 23:54:52-log: [Package] node-library@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] shortcuts@1.0.1 enable
+2022-05-20 23:54:52-log: [Package] package-asset@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] reference-image@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] animation-graph@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] channel-upload-tools@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] runtime-dev-tools@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] lightmap@1.0.4 enable
+2022-05-20 23:54:52-log: [Package] alipay-mini-game@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] android@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] baidu-mini-game@1.0.0 enable
+2022-05-20 23:54:52-log: [Package] bytedance-mini-game@1.0.1 enable
+2022-05-20 23:54:52-log: [Package] huawei-agc@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] ios@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] ios-app-clip@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] mac@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] native@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] ohos@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] web-desktop@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] web-mobile@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] wechatgame@1.0.1 enable
+2022-05-20 23:54:53-log: [Package] windows@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] xiaomi-quick-game@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] cocos-play@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] huawei-quick-game@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] link-sure@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] oppo-mini-game@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] qtt@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] vivo-mini-game@1.0.0 enable
+2022-05-20 23:54:53-log: [Package] cocos-service@3.0.2 enable
+2022-05-20 23:54:53-log: [Package] importer@1.0.0 enable
+2022-05-20 23:54:54-log: [Package] extension@3.0.15 enable
+2022-05-20 23:54:54-log: [Im-plugin] Check im-plugin version.
+2022-05-20 23:54:54-log: [Package] im-plugin@3.0.8 enable
+2022-05-20 23:54:54-log: [Scene] Cocos Creator v3.4.2
+2022-05-20 23:54:54-info: [Scene] Forward render pipeline initialized.
+2022-05-20 23:54:55-log: [Im-plugin] No online info of im-plugin.
+2022-05-21 12:05:28-error: [Preview]Uncaught TypeError: Cannot set properties of null (setting '_rollTarget') in http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js
+2022-05-21 12:19:39-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '2')
+2022-05-21 12:19:39-error: [Preview]TypeError: Cannot read properties of undefined (reading '2')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:19:39-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '0')
+2022-05-21 12:19:39-error: [Preview]TypeError: Cannot read properties of undefined (reading '0')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:19:39-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '1')
+2022-05-21 12:19:39-error: [Preview]TypeError: Cannot read properties of undefined (reading '1')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:19:39-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '4')
+2022-05-21 12:19:39-error: [Preview]TypeError: Cannot read properties of undefined (reading '4')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:19:39-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '3')
+2022-05-21 12:19:39-error: [Preview]TypeError: Cannot read properties of undefined (reading '3')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:20:13-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '0')
+2022-05-21 12:20:13-error: [Preview]TypeError: Cannot read properties of undefined (reading '0')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:20:13-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '1')
+2022-05-21 12:20:13-error: [Preview]TypeError: Cannot read properties of undefined (reading '1')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:20:14-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '2')
+2022-05-21 12:20:14-error: [Preview]TypeError: Cannot read properties of undefined (reading '2')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:20:14-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '3')
+2022-05-21 12:20:14-error: [Preview]TypeError: Cannot read properties of undefined (reading '3')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 12:20:14-error: [Preview]unhandledrejection: Cannot read properties of undefined (reading '4')
+2022-05-21 12:20:14-error: [Preview]TypeError: Cannot read properties of undefined (reading '4')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:85:25
+    at new Promise (<anonymous>)
+    at Function._onCallbackStop (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:80:49)
+    at Reel._reelStopCB (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:62:25)
+    at Reel.update (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Reel.js:80:42)
+    at http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138442:29
+    at ReusableInvoker._invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138229:9)
+    at ReusableInvoker.invoke (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138414:16)
+    at ComponentScheduler.updatePhase (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:138648:30)
+    at Director.tick (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:5234:35)
+2022-05-21 19:29:16-error: [Preview]unhandledrejection: Cannot set properties of undefined (setting 'resolve')
+2022-05-21 19:29:16-error: [Preview]TypeError: Cannot set properties of undefined (setting 'resolve')
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:70:34
+    at new Promise (<anonymous>)
+    at http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:68:27
+    at Array.forEach (<anonymous>)
+    at Table.spin (http://localhost:7457/scripting/x/mods/fs/0/assets/scripts/Table.js:67:23)
+    at EventHandler.emit (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:82816:19)
+    at Function.emitEvents (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:82761:19)
+    at Button._onTouchEnded (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:39168:35)
+    at CallbacksInvoker.emit (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:104125:28)
+    at NodeEventProcessor.dispatchEvent (http://localhost:7457/scripting/engine/bin/.cache/dev/preview/bundled/index.js:141669:33)
