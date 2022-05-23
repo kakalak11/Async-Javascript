@@ -16,17 +16,19 @@ export class Reel extends Component {
     @property
     reelSpeed = 100;
 
-    startSpin(callback) {
-        this._rollTarget = Math.round(Math.random() * 20 + 50);
-        this._spinning = true;
-        this._rollCount = 0;
-        this._rollY = 0;
-        this.reelSpeed = Math.random()*500 + 700;
-        this._direction = (Math.random() > 0.5) ? 1 : -1;
-        this._reelStopCB = ()=>{
-            this.node.setPosition(new Vec3(this.node.position.x, 0, 0));
-            callback && callback();
-        }
+    startSpin() {
+        return new Promise((resolve)=>{
+            this._rollTarget = Math.round(Math.random() * 20 + 50);
+            this._spinning = true;
+            this._rollCount = 0;
+            this._rollY = 0;
+            this.reelSpeed = Math.random() * 500 + 700;
+            this._direction = (Math.random() > 0.5) ? 1 : -1;
+            this._reelStopCB = () => {
+                this.node.setPosition(new Vec3(this.node.position.x, 0, 0));
+                resolve && resolve(null);
+            }
+        })
     }
 
     update(dt) {

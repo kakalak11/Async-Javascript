@@ -3,14 +3,15 @@ import { _decorator, Component, Node, log, Label } from 'cc';
 import { Reel } from './Reel';
 const { ccclass, property } = _decorator;
 
- 
+
 @ccclass('Table')
 export class Table extends Component {
 
     _reels = [];
 
-    @property({type: Label})
+    @property({ type: Label })
     status = null;
+    private _stop: number = 0;
 
     onLoad() {
         this._reels = this.getComponentsInChildren(Reel);
@@ -18,7 +19,16 @@ export class Table extends Component {
 
     spin() {
         this.status.string = 'Table Spinning';
-        this._reels.forEach(it => it.startSpin());
+        if (this._stop === this._reels.length) return this.onTableStop();
+        return this._reels[this._stop].startSpin().then(() => {
+            this._stop++;
+            this.spin();
+        })
+    }
+
+    onTableStop() {
+        this._stop = 0;
+        this.status.string = 'Table Stopped';
     }
 
     /*

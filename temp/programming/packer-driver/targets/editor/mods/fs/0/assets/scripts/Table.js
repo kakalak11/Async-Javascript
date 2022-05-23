@@ -45,6 +45,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           _defineProperty(this, "_reels", []);
 
           _initializerDefineProperty(this, "status", _descriptor, this);
+
+          _defineProperty(this, "_stop", 0);
         }
 
         onLoad() {
@@ -55,8 +57,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
         spin() {
           this.status.string = 'Table Spinning';
+          if (this._stop === this._reels.length) return this.onTableStop();
+          return this._reels[this._stop].startSpin().then(() => {
+            this._stop++;
+            this.spin();
+          });
+        }
 
-          this._reels.forEach(it => it.startSpin());
+        onTableStop() {
+          this._stop = 0;
+          this.status.string = 'Table Stopped';
         }
         /*
         Quest 1: Implement function spin table 5 reel cùng lúc, sử dụng promise, trả về call back khi tất cả reel cùng dừng lại
